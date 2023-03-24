@@ -27,7 +27,7 @@ class MyHomePage extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text(
-                      "Halo gess",
+                      "Halo ",
                       style: TextStyle(
                         fontSize: 20,
                         fontWeight: FontWeight.w400,

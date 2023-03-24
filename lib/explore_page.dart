@@ -1,4 +1,3 @@
-
 import 'package:belajar_flutter_unit3/pages/staff.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -14,8 +13,7 @@ class ExplorePage extends StatelessWidget {
       body: SafeArea(
         child: SingleChildScrollView(
           scrollDirection: Axis.vertical,
-          child: 
-          Padding(
+          child: Padding(
             padding: const EdgeInsets.symmetric(
               horizontal: 24,
               vertical: 30,
@@ -70,7 +68,6 @@ class ExplorePage extends StatelessWidget {
                         fontWeight: FontWeight.w600,
                       ),
                     ),
-                  
                     const SizedBox(height: 8),
                     SingleChildScrollView(
                       scrollDirection: Axis.horizontal,
@@ -104,7 +101,8 @@ class ExplorePage extends StatelessWidget {
                               Container(
                                 padding: EdgeInsets.all(13),
                                 decoration: BoxDecoration(
-                                  borderRadius: BorderRadiusDirectional.circular(40),
+                                  borderRadius:
+                                      BorderRadiusDirectional.circular(40),
                                   color: Color(0xffF7F6F9),
                                 ),
                                 child: Image.asset(
@@ -117,7 +115,7 @@ class ExplorePage extends StatelessWidget {
                               Text("Gudang"),
                             ],
                           ),
-                           SizedBox(width: 16),
+                          SizedBox(width: 16),
                           //category 3
                           Column(
                             children: [
@@ -125,7 +123,8 @@ class ExplorePage extends StatelessWidget {
                               Container(
                                 padding: EdgeInsets.all(13),
                                 decoration: BoxDecoration(
-                                  borderRadius: BorderRadiusDirectional.circular(40),
+                                  borderRadius:
+                                      BorderRadiusDirectional.circular(40),
                                   color: Color(0xffF7F6F9),
                                 ),
                                 child: Image.asset(
@@ -145,8 +144,9 @@ class ExplorePage extends StatelessWidget {
                               Container(
                                 padding: EdgeInsets.all(13),
                                 decoration: BoxDecoration(
-                                  borderRadius: BorderRadiusDirectional.circular(40),
-                                  color:Color(0xffF7F6F9),
+                                  borderRadius:
+                                      BorderRadiusDirectional.circular(40),
+                                  color: Color(0xffF7F6F9),
                                 ),
                                 child: Image.asset(
                                   "assets/image/assets/fi_cloud-drizzle.png",
@@ -160,13 +160,14 @@ class ExplorePage extends StatelessWidget {
                           ),
                           SizedBox(width: 16),
                           //category 5
-                            Column(
+                          Column(
                             children: [
                               Container(
                                 padding: EdgeInsets.all(13),
                                 decoration: BoxDecoration(
-                                  borderRadius: BorderRadiusDirectional.circular(40),
-                                  color:Color(0xffF7F6F9),
+                                  borderRadius:
+                                      BorderRadiusDirectional.circular(40),
+                                  color: Color(0xffF7F6F9),
                                 ),
                                 child: Image.asset(
                                   "assets/image/assets/fi_briefcase.png",
@@ -184,8 +185,9 @@ class ExplorePage extends StatelessWidget {
                               Container(
                                 padding: EdgeInsets.all(13),
                                 decoration: BoxDecoration(
-                                  borderRadius: BorderRadiusDirectional.circular(40),
-                                  color:Color(0xffF7F6F9),
+                                  borderRadius:
+                                      BorderRadiusDirectional.circular(40),
+                                  color: Color(0xffF7F6F9),
                                 ),
                                 child: Image.asset(
                                   "assets/image/assets/fi_briefcase.png",
@@ -202,7 +204,7 @@ class ExplorePage extends StatelessWidget {
                     ),
                   ],
                 ),
-               SizedBox(height: 24),
+                SizedBox(height: 24),
                 //staff pick
                 Row(
                   children: [
@@ -215,28 +217,33 @@ class ExplorePage extends StatelessWidget {
                             fontSize: 20,
                             fontWeight: FontWeight.bold,
                           ),
-                          )
+                        )
                       ],
                     ),
                   ],
-                ),//staff pick
+                ), //staff pick
                 SizedBox(height: 5),
-        //gambar staff pick
-          SingleChildScrollView(
-            scrollDirection: Axis.horizontal,
-            child: Row(
-              children: [
-                 staff( "assets/image/assets/image_7.png","new","lagon sky","USD 920", "800 sq ft."),
-                 staff( "assets/image/assets/image_8.png","","rusia","USD 920", "800 sq ft."),
-                 staff( "assets/image/assets/image_9.png","","new land","USD 920", "800 sq ft."),
-                 staff( "assets/image/assets/image_10.png","","paris","USD 920", "800 sq ft."),
-                 staff( "assets/image/assets/image_6.png","","austria","USD 920", "800 sq ft."),
-                 staff( "assets/image/assets/image_7.png","new","lagon sky","USD 920", "800 sq ft."),
-          
-              ],
-            ),
-          ),
-          
+                //gambar staff pick
+                SingleChildScrollView(
+                  scrollDirection: Axis.horizontal,
+                  child: Row(
+                    children: [
+                      staff("assets/image/assets/image_7.png", "new",
+                          "lagon sky", "USD 920", "800 sq ft."),
+                      staff("assets/image/assets/image_8.png", "", "indonesia",
+                          "USD 920", "800 sq ft."),
+                      staff("assets/image/assets/image_9.png", "", "new land",
+                          "USD 920", "800 sq ft."),
+                      staff("assets/image/assets/image_10.png", "", "thailand",
+                          "USD 920", "800 sq ft."),
+                      staff("assets/image/assets/image_6.png", "", "australia",
+                          "USD 920", "800 sq ft."),
+                      staff("assets/image/assets/image_7.png", "new",
+                          "lagon sky", "USD 920", "800 sq ft."),
+                    ],
+                  ),
+                ),
+
                 // SingleChildScrollView(
                 //   scrollDirection: Axis.horizontal,
                 //   child: Row(
@@ -262,12 +269,12 @@ class ExplorePage extends StatelessWidget {
                 //                   ),
                 //                 child: Container(alignment: Alignment.bottomLeft,
                 //                   child: Text(
-                //                     "logon sky", 
+                //                     "logon sky",
                 //                     style: GoogleFonts.poppins(
                 //                       fontSize: 15,
                 //                       fontWeight: FontWeight.bold,
                 //                     ),
-                //                   ),   
+                //                   ),
                 //                 ),
                 //                 ),
                 //                 Container(
@@ -275,13 +282,13 @@ class ExplorePage extends StatelessWidget {
                 //                   height: 120,
                 //                   decoration: BoxDecoration(
                 //                     borderRadius: BorderRadius.circular(10),
-                //                      image: DecorationImage(            
+                //                      image: DecorationImage(
                 //                       fit: BoxFit.cover,
                 //                image:AssetImage("assets/image/assets/image_6.png"),),
-                                     
+
                 //                   ),
-                //                 ), 
-                                               
+                //                 ),
+
                 //               ],
                 //             ),
                 //             SizedBox(width: 8),
@@ -306,7 +313,7 @@ class ExplorePage extends StatelessWidget {
                 //                       fontSize: 15,
                 //                        fontWeight: FontWeight.bold,
                 //                     ),
-                //                   ),   
+                //                   ),
                 //                 ),
                 //                 ),
                 //                 Container(
@@ -314,15 +321,15 @@ class ExplorePage extends StatelessWidget {
                 //                   height: 120,
                 //                   decoration: BoxDecoration(
                 //                     borderRadius: BorderRadius.circular(10),
-                //                      image: DecorationImage(            
+                //                      image: DecorationImage(
                 //                       fit: BoxFit.cover,
                 //                image:AssetImage("assets/image/assets/image_7.png",
                 //                ),
                 //                ),
-                                     
+
                 //                   ),
                 //                 ),
-                               
+
                 //               ],
                 //             ),
                 //              SizedBox(width: 8),
@@ -342,12 +349,12 @@ class ExplorePage extends StatelessWidget {
                 //                   ),
                 //                 child: Container(alignment: Alignment.bottomLeft,
                 //                   child: Text(
-                //                     "Inn prophatt", 
+                //                     "Inn prophatt",
                 //                     style: GoogleFonts.poppins(
                 //                       fontSize: 15,
                 //                        fontWeight: FontWeight.bold,
                 //                     ),
-                //                   ),   
+                //                   ),
                 //                 ),
                 //                 ),
                 //                 Container(
@@ -355,15 +362,15 @@ class ExplorePage extends StatelessWidget {
                 //                   height: 120,
                 //                   decoration: BoxDecoration(
                 //                     borderRadius: BorderRadius.circular(10),
-                //                      image: DecorationImage(            
+                //                      image: DecorationImage(
                 //                       fit: BoxFit.cover,
                 //                image:AssetImage("assets/image/assets/image_8.png",
                 //                ),
                 //                ),
-                                     
+
                 //                   ),
                 //                 ),
-                               
+
                 //               ],
                 //             ),
                 //              SizedBox(width: 8),
@@ -383,12 +390,12 @@ class ExplorePage extends StatelessWidget {
                 //                   ),
                 //                 child: Container(alignment: Alignment.bottomLeft,
                 //                   child: Text(
-                //                     "logon sky", 
+                //                     "logon sky",
                 //                     style: GoogleFonts.poppins(
                 //                       fontSize: 15,
                 //                        fontWeight: FontWeight.bold,
                 //                     ),
-                //                   ),   
+                //                   ),
                 //                 ),
                 //                 ),
                 //                 Container(
@@ -396,15 +403,15 @@ class ExplorePage extends StatelessWidget {
                 //                   height: 120,
                 //                   decoration: BoxDecoration(
                 //                     borderRadius: BorderRadius.circular(10),
-                //                      image: DecorationImage(            
+                //                      image: DecorationImage(
                 //                       fit: BoxFit.cover,
                 //                image:AssetImage("assets/image/assets/image_9.png",
                 //                ),
                 //                ),
-                                     
+
                 //                   ),
                 //                 ),
-                               
+
                 //               ],
                 //             ),
                 //             SizedBox(width: 8),
@@ -424,12 +431,12 @@ class ExplorePage extends StatelessWidget {
                 //                   ),
                 //                 child: Container(alignment: Alignment.bottomLeft,
                 //                   child: Text(
-                //                     "logon sky", 
+                //                     "logon sky",
                 //                     style: GoogleFonts.poppins(
                 //                       fontSize: 15,
                 //                        fontWeight: FontWeight.bold,
                 //                     ),
-                //                   ),   
+                //                   ),
                 //                 ),
                 //                 ),
                 //                 Container(
@@ -437,23 +444,23 @@ class ExplorePage extends StatelessWidget {
                 //                   height: 120,
                 //                   decoration: BoxDecoration(
                 //                     borderRadius: BorderRadius.circular(10),
-                //                      image: DecorationImage(            
+                //                      image: DecorationImage(
                 //                       fit: BoxFit.cover,
                 //                image:AssetImage("assets/image/assets/image_10.png",
                 //                ),
                 //                ),
-                                     
+
                 //                   ),
                 //                 ),
                 //               ],
                 //             ),
-                //           ],  
-                //         ),    
+                //           ],
+                //         ),
                 //       ),
                 //     ],
                 //   ),
                 // ),
-                SizedBox(height:10),
+                SizedBox(height: 10),
                 Row(
                   children: [
                     Column(
@@ -466,30 +473,37 @@ class ExplorePage extends StatelessWidget {
                           ),
                         ),
                       ],
-                    ),    
+                    ),
                   ],
                 ),
                 SizedBox(height: 5),
-                 Padding(
-                      padding: EdgeInsets.symmetric(horizontal: 1),
-                      child: SingleChildScrollView(
-                        scrollDirection: Axis.horizontal,
-                        child: Row(
-                          children: [
-                            profilitem("satthu","1902 sold", "assets/image/assets/image_71.png"),
-                            profilitem("isy mana","839 sold", "assets/image/assets/image_73.png"),
-                            profilitem("luph","677 sold", "assets/image/assets/image_75.png"),
-                            profilitem("rasss","344 sold", "assets/image/assets/image_73.png"),
-                            profilitem("satthu","1902 sold", "assets/image/assets/image_71.png"),
-                            profilitem("isy mana","839 sold", "assets/image/assets/image_75.png"),
-                            profilitem("luph","677 sold", "assets/image/assets/image_71.png"),
-                            profilitem("rasss","344 sold", "assets/image/assets/image_71.png"),
-                      
-                          ],
-                        ),
-                      ),
-                      ),
-                 Padding(
+                Padding(
+                  padding: EdgeInsets.symmetric(horizontal: 1),
+                  child: SingleChildScrollView(
+                    scrollDirection: Axis.horizontal,
+                    child: Row(
+                      children: [
+                        profilitem("tara", "1902 sold",
+                            "assets/image/assets/image_73.png"),
+                        profilitem("zaskia", "839 sold",
+                            "assets/image/assets/image_75.png"),
+                        profilitem("thamrin", "677 sold",
+                            "assets/image/assets/image_71.png"),
+                        profilitem("tara", "344 sold",
+                            "assets/image/assets/image_73.png"),
+                        profilitem("zaskia", "1902 sold",
+                            "assets/image/assets/image_75.png"),
+                        profilitem("thamrin", "839 sold",
+                            "assets/image/assets/image_71.png"),
+                        profilitem("tara zaskia", "677 sold",
+                            "assets/image/assets/image_75.png"),
+                        profilitem("tara", "344 sold",
+                            "assets/image/assets/image_73.png"),
+                      ],
+                    ),
+                  ),
+                ),
+                Padding(
                   padding: const EdgeInsets.only(bottom: 20, left: 5, right: 5),
                   child: SingleChildScrollView(
                     scrollDirection: Axis.vertical,
@@ -500,7 +514,7 @@ class ExplorePage extends StatelessWidget {
                               style: GoogleFonts.poppins(
                                   fontSize: 18, fontWeight: FontWeight.w600)),
                           const SizedBox(height: 8),
-                                  
+
                           //listTile
                           Column(
                             mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -516,7 +530,7 @@ class ExplorePage extends StatelessWidget {
                                     "assets/image/assets/image_8.png",
                                     fit: BoxFit.fill,
                                   ),
-                                  title: Text("Jakarta Selatan",
+                                  title: Text("Banda Aceh",
                                       style: GoogleFonts.poppins(
                                         fontSize: 14,
                                         fontWeight: FontWeight.w600,
@@ -525,7 +539,7 @@ class ExplorePage extends StatelessWidget {
                                 ),
                               ),
                               const SizedBox(height: 10),
-                                  
+
                               //city 2
                               Container(
                                 padding: const EdgeInsets.all(5),
@@ -537,7 +551,7 @@ class ExplorePage extends StatelessWidget {
                                     "assets/image/assets/image_7.png",
                                     fit: BoxFit.fill,
                                   ),
-                                  title: Text("Bandung",
+                                  title: Text("Depok",
                                       style: GoogleFonts.poppins(
                                         fontSize: 14,
                                         fontWeight: FontWeight.w600,
@@ -546,7 +560,7 @@ class ExplorePage extends StatelessWidget {
                                 ),
                               ),
                               const SizedBox(height: 10),
-                                  
+
                               //city 3
                               Container(
                                 padding: const EdgeInsets.all(5),
@@ -558,7 +572,7 @@ class ExplorePage extends StatelessWidget {
                                     "assets/image/assets/image_8.png",
                                     fit: BoxFit.fill,
                                   ),
-                                  title: Text("Denpasar",
+                                  title: Text("Surabaya",
                                       style: GoogleFonts.poppins(
                                         fontSize: 14,
                                         fontWeight: FontWeight.w600,
@@ -571,50 +585,49 @@ class ExplorePage extends StatelessWidget {
                           ),
                         ]),
                   ),
-                            
                 ),
-            //       Row(
-            //         crossAxisAlignment: CrossAxisAlignment.start,
-            //         children: [
-            //           SingleChildScrollView(
-            //             scrollDirection: Axis.vertical,
-            //             child: Row(
-            //               children: [
-            //                 Padding(
-            //                   padding: EdgeInsets.only(bottom: 2),
-            //                   child:Row(
-            //                     children: [
-            //                       Container(
-            //                         height: 100,
-            //                         width: 150,
-            //                         decoration: BoxDecoration(
-            //                           borderRadius: BorderRadius.circular(10),
-            //                           image:DecorationImage(image: AssetImage("assets/image/assets/image_71.png"),
-            //                           fit: BoxFit.cover,
-            //                           ),  
-            //                         ),
-            //                       ),
-            //                     ],
-            //                   ),
-            //                 ),
-            //                 SizedBox(height: 7),
-            // Text("jakarta selatan",
-            // style: GoogleFonts.poppins(
-            //   fontSize: 14, 
-            // ),
-            // ),
-            // Text(
-            //   "194 property",
-            //   style: GoogleFonts.poppins(
-            //     fontSize: 12,
-            //     color: Colors.grey,
-            //   ),
-            // ),
-            //               ],
-            //             ),
-            //           ),
-            //         ],
-            //       ),
+                //       Row(
+                //         crossAxisAlignment: CrossAxisAlignment.start,
+                //         children: [
+                //           SingleChildScrollView(
+                //             scrollDirection: Axis.vertical,
+                //             child: Row(
+                //               children: [
+                //                 Padding(
+                //                   padding: EdgeInsets.only(bottom: 2),
+                //                   child:Row(
+                //                     children: [
+                //                       Container(
+                //                         height: 100,
+                //                         width: 150,
+                //                         decoration: BoxDecoration(
+                //                           borderRadius: BorderRadius.circular(10),
+                //                           image:DecorationImage(image: AssetImage("assets/image/assets/image_71.png"),
+                //                           fit: BoxFit.cover,
+                //                           ),
+                //                         ),
+                //                       ),
+                //                     ],
+                //                   ),
+                //                 ),
+                //                 SizedBox(height: 7),
+                // Text("jakarta selatan",
+                // style: GoogleFonts.poppins(
+                //   fontSize: 14,
+                // ),
+                // ),
+                // Text(
+                //   "194 property",
+                //   style: GoogleFonts.poppins(
+                //     fontSize: 12,
+                //     color: Colors.grey,
+                //   ),
+                // ),
+                //               ],
+                //             ),
+                //           ),
+                //         ],
+                //       ),
               ],
             ),
           ),
@@ -623,6 +636,3 @@ class ExplorePage extends StatelessWidget {
     );
   }
 }
-
-
-
